@@ -1,0 +1,24 @@
+div#dialog-form-sign-up, div#dialog-form-log-in label, input { display:block; }
+div#dialog-form-sign-up, div#dialog-form-log-in label,  input.text { margin-bottom:12px; width:95%; padding: .4em; }
+div#dialog-form-sign-up, div#dialog-form-log-in label,  fieldset { padding:0; border:0; margin-top:25px; }
+div#dialog-form-sign-up, div#dialog-form-log-in label,  h1 { font-size: 1.2em; margin: .6em 0; }
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+
+#searchlist li:hover {
+    background-color: lightgrey;
+}
+
+
+#searchlist{
+    overflow: auto;
+    height: 700px;
+}
+
+#leftNav{
+    margin-right: 80px;
+}
+
+.checked {
+    color: orange;
+}
