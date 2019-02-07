@@ -1,0 +1,100 @@
+{
+  "users": [
+    {
+      "username": "tylerpub",
+      "password": "nscc123",
+      "id": 1
+    },
+    {
+      "username": "kylebul",
+      "password": "nscc456",
+      "id": 2
+    },
+    {
+      "username": "joeyg",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "username": "ronan",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "username": "kylebulger",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "username": "gaw34213",
+      "password": "fsawe123",
+      "id": 6
+    },
+    {
+      "username": "hrwq42123",
+      "password": "gdaw123",
+      "id": 7
+    }
+  ],
+  "readbooks": [
+    {
+      "id": "asdw123faw",
+      "title": "gewqe",
+      "rating": 1,
+      "userId": 1
+    },
+    {
+      "id": "hFfhrCWiLSMC",
+      "rating": "4",
+      "title": "The Hobbit, Or, There and Back Again",
+      "userId": "3"
+    },
+    {
+      "id": "3QOZBAAAQBAJ",
+      "rating": "4",
+      "title": "How to Read a Book",
+      "userId": "3"
+    },
+    {
+      "id": "TlYWqAAACAAJ",
+      "rating": "3",
+      "title": "The Fellowship of the Ring",
+      "userId": "3"
+    },
+    {
+      "id": "f3q6mwEACAAJ",
+      "rating": "4",
+      "title": "The Fellowship of the Ring",
+      "userId": "3"
+    },
+    {
+      "id": "ikovngEACAAJ",
+      "rating": "3",
+      "title": "The Hobbit",
+      "userId": "3"
+    },
+    {
+      "id": "j2uGDAAAQBAJ",
+      "rating": "2",
+      "title": "The Hobbit",
+      "userId": "3"
+    }
+  ],
+  "unreadbooks": [
+    {
+      "id": "dxMLnayXwTQC",
+      "title": "More Than a Game",
+      "userId": "3"
+    },
+    {
+      "id": "j2uGDAAAQBAJ",
+      "title": "The Hobbit",
+      "userId": "3"
+    },
+    {
+      "id": "yl4dILkcqm4C",
+      "title": "The Lord of the Rings",
+      "userId": "3"
+    }
+  ]
+}

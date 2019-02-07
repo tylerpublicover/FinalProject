@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Library Books</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+<div id="users">
+    <ul id="userBar">
+        <li id="home" class="active">Home</li>
+        <li id="about">About</li>
+        <li id="loggedUser" style="float:right; display:none"></li>
+        <li id="logOut" style="float:right; display:none">Log Out</li>
+        <li style="float:right" id="logIn" >Log In</li>
+        <li style="float:right" id="signUp" >Sign Up</li>
+    </ul>
+</div>
+
+<div id="dialog-form-sign-up" title="Create new user">
+    <p class="validateTips">All form fields are required.</p>
+
+    <form id="sign-up">
+        <fieldset>
+            <label for="name">Username</label>
+            <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="text ui-widget-content ui-corner-all">
+
+            <!-- Allow form submission with keyboard without duplicating the dialog button -->
+            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+        </fieldset>
+    </form>
+</div>
+
+<div id="dialog-form-log-in" title="Log In">
+    <p class="validateLog">All form fields are required.</p>
+
+    <form id="log-in">
+        <fieldset>
+            <label for="name">Username</label>
+            <input type="text" name="name" id="username" class="text ui-widget-content ui-corner-all">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="pword" class="text ui-widget-content ui-corner-all">
+
+            <!-- Allow form submission with keyboard without duplicating the dialog button -->
+            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+        </fieldset>
+    </form>
+</div>
+
+
+</body>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/MainPageStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/mainpage.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <ul class="navbar-nav  mr-auto">
+            <li><input class="mr-sm-2" type="text" placeholder="Search for a book" id="searchbar"></li>
+            <li><button class="btn btn-success" type="button" id="searchbutton">Search</button></li>
+        </ul>
+        <ul class="navbar-nav" id="leftNav">
+            <li id="signUp" class="nav-item"><a href="#" class="nav-link">Sign Up</a></li>
+            <li id="logIn" class="nav-item"><a href="#" class="nav-link">Login</a></li>
+
+            <!-- Dropdown -->
+            <li id="loggedIn" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="wishlistpage.html">Wish List</a>
+                    <a id="logout" class="dropdown-item" href="#">Log out</a>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+</div><br><br><br>
+
+<div class="container-fluid">
+    <div class="jumbotron text-center">
+        <h3>Welcome to Googles Book API</h3>
+        <p>Search for a book, wish list it, set it to read and rate the book</p>
+    </div>
+    <div class="row">
+        <div id="searchlist" class="col-sm-4 list-unstyled"></div>
+        <div id="book" class="col-sm-8">
+            <h2 id="title"></h2>
+            <h4 id="author"></h4>
+            <div id="image"></div>
+            <div id="info"></div>
+            <div id="extra" style="display: none">
+                <p>Rate the Book</p>
+                <button class="button" id="read">Rate</button>
+                <span id="1star" class="fa fa-star"></span>
+                <span id="2star" class="fa fa-star"></span>
+                <span id="3star" class="fa fa-star"></span>
+                <span id="4star" class="fa fa-star"></span>
+                <span id="5star" class="fa fa-star"></span><br><br>
+                <p>Add the book to your Wishlist</p>
+                <button class="button" id="wishlist">Add to Wishlist</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="dialog-form-sign-up" title="Create new user">
+    <p class="validateTips">All form fields are required.</p>
+
+    <form id="sign-up">
+        <fieldset>
+            <label for="name">Username</label>
+            <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="text ui-widget-content ui-corner-all">
+
+            <!-- Allow form submission with keyboard without duplicating the dialog button -->
+            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+        </fieldset>
+    </form>
+</div>
+
+<div id="dialog-form-log-in" title="Log In">
+    <p class="validateLog">All form fields are required.</p>
+
+    <form id="log-in">
+        <fieldset>
+            <label for="name">Username</label>
+            <input type="text" name="name" id="username" class="text ui-widget-content ui-corner-all">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="pword" class="text ui-widget-content ui-corner-all">
+
+            <!-- Allow form submission with keyboard without duplicating the dialog button -->
+            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+        </fieldset>
+    </form>
+</div>
+
+<!-- Add your site or application content here -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>
